@@ -21,5 +21,8 @@ jobs:
         with:
           node-version: "20.10.0" # 使いたいNode.jsのバージョンを指定
 
+      - name: 依存関係をインストール
+        run: npm install
+
       - name: TypeScript 型チェック
         run: npx tsc --noEmit
